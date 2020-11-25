@@ -40,24 +40,28 @@ document.addEventListener('DOMContentLoaded',function(event){
     </script>
     <style>
         body {
-            background-color: #2B3D41;
+            background-color: #F1F2F2;
         }
 
         .text-box {
             width: 350px;
-            background: #4c5f6b;
+            background: none;
 
         }
 
         h2 {
-            color: #f3b391;
+            color: #ff6e7f;
             font-size: 50px;
             font-family: 'Roboto', sans-serif;
         }
 
+        .title-container {
+            position: relative;
+            height: max-content;
+        }
+
         #title {
-            color: white;
-            margin-top: 80px;
+            color: #001011;
             font-family: 'Roboto', sans-serif;
             font-size: 80px;
         }
@@ -68,23 +72,48 @@ document.addEventListener('DOMContentLoaded',function(event){
         }
 
         p {
-            color: rgb(255, 255, 255);
+            color: #001011;
             font-size: 20px;
             font-family: 'Roboto', sans-serif;
         }
 
         .general-btn {
-            color: rgb(232, 49, 81);
-            border: 1px solid rgb(232, 49, 81);
+            color: #1B998B;
+            border: 1px solid #1B998B;
             background: none;
             font-size: 35px;
             font-family: 'Roboto', sans-serif;
             cursor: pointer;
         }
 
+        .general-btn {
+            background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%)
+        }
+
+        .general-btn {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+            border: none;
+        }
+
+        .general-btn:hover {
+            background-position: right center;
+            color: #fff;
+            text-decoration: none;
+        }
+
+
         .general-btn:hover {
             color: white;
-            background-color: rgb(232, 49, 81);
+            background-color: #1B998B;
             box-shadow: 0 5px 15px rgba(232, 49, 81, .4);
         }
 
@@ -102,9 +131,17 @@ document.addEventListener('DOMContentLoaded',function(event){
 </head>
 
 <body>
-    <h1 class="anim-typewriter" id="title">RYAN SPURGEON</h1>
+    <div class="title-container">
+        <h1 class="anim-typewriter" style="position: absolute;" id="title">RYAN SPURGEON</h1>
+        <h1 style="position: relative; color: transparent;" id="title">RYAN SPURGEON</h1>
+    </div>
 
-    <h2>//About me</h2>
+
+
+
+
+
+    <h2>About me</h2>
 
     <p class="text-box">Ryan Spurgeon is a Canadian high school student and pianist who enjoys coding and
         computer graphics. This website serves as a portfolio of several projects and creations he has made so far.

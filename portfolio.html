@@ -8,11 +8,11 @@
 </head>
 <style>
     body {
-        background-color: #2B3D41;
+        background-color: #F1F2F2;
     }
 
     h2 {
-        color: #f3b391;
+        color: #ff6e7f;
         font-size: 50px;
         font-family: 'Roboto', sans-serif;
         margin-right: 5%;
@@ -25,13 +25,13 @@
     }
 
     p {
-        color: rgb(255, 255, 255);
+        color: #001011;
         font-size: 20px;
         font-family: 'Roboto', sans-serif;
     }
 
     a {
-        color: #c3eb78;
+        color: #ff6e7f;
         text-decoration: underline;
         font-weight: bold
     }
@@ -42,17 +42,41 @@
     }
 
     .general-btn {
-        color: rgb(232, 49, 81);
-        border: 1px solid rgb(232, 49, 81);
+        color: #1B998B;
+        border: 1px solid #1B998B;
         background: none;
         font-size: 35px;
         font-family: 'Roboto', sans-serif;
         cursor: pointer;
     }
 
+    .general-btn {
+        background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%)
+    }
+
+    .general-btn {
+        margin: 10px;
+        padding: 15px 45px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .general-btn:hover {
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
+    }
+
+
     .general-btn:hover {
         color: white;
-        background-color: rgb(232, 49, 81);
+        background-color: #1B998B;
         box-shadow: 0 5px 15px rgba(232, 49, 81, .4);
     }
 
@@ -100,7 +124,7 @@
 </style>
 
 <body>
-    <h2>//Portfolio</h2>
+    <h2>Portfolio</h2>
     <button onclick="window.location.href='index.html';" type="button" class="general-btn">ABOUT ME</button>
     <div>
         <article>
