@@ -82,24 +82,10 @@
 
     #scroll-btn {
         bottom: 20px;
-        color: rgb(232, 49, 81);
-        border: 1px solid rgb(232, 49, 81);
-        background: none;
-        font-family: 'Roboto', sans-serif;
-        cursor: pointer;
-        display: none;
-        outline: medium none;
-        padding: 10px 15px 7px;
         position: fixed;
         right: 30px;
         z-index: 99;
         font-size: 20px;
-    }
-
-    #scroll-btn:hover {
-        color: white;
-        background-color: rgb(232, 49, 81);
-        box-shadow: 0 5px 15px rgba(232, 49, 81, .4);
     }
 
     .video-container {
@@ -204,7 +190,7 @@
                 accurate.</p>
         </article>
     </div>
-    <button onclick="scrollToTop()" id="scroll-btn" title="Go to top">Top</button>
+    <button class="general-btn" onclick="scrollToTop()" id="scroll-btn" title="Go to top">Top</button>
     <footer>
         <p class="footer">Copyright 2020 by Ryan Spurgeon</p>
     </footer>
