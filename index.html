@@ -77,6 +77,12 @@ document.addEventListener('DOMContentLoaded',function(event){
             font-family: 'Roboto', sans-serif;
         }
 
+        a {
+            color: #ff6e7f;
+            text-decoration: underline;
+            font-weight: bold
+        }
+
         .general-btn {
             color: #1B998B;
             border: 1px solid #1B998B;
@@ -122,6 +128,26 @@ document.addEventListener('DOMContentLoaded',function(event){
             animation: caret 1s steps(1) infinite;
         }
 
+        .video-container {
+            position: relative;
+            padding-bottom: min(540px, 56.25%);
+            height: 0;
+            overflow: auto;
+
+        }
+
+        .video-container iframe,
+        .video-container object,
+        .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            max-width: 960px;
+            max-height: 540px;
+        }
+
         @keyframes caret {
             50% {
                 border-color: transparent;
@@ -153,6 +179,17 @@ document.addEventListener('DOMContentLoaded',function(event){
     <button onclick="window.location.href='qualifications.html';" type="button" class="general-btn">QUALIFICATIONS
         AND
         AWARDS</button>
+
+    <article>
+        <p><a href="https://youtu.be/tOeguy5L6b0">The Minute Waltz (Frédéric Chopin)</a> - <i>2020</i></p>
+        <div class="video-container"><iframe frameborder="0" src="https://youtube.com/embed/tOeguy5L6b0">
+            </iframe></div>
+    </article>
+    <article>
+        <p><a href="https://youtu.be/HlN8jg4PP40">Moonlight Sonata mv I (Ludwig van Beethoven)</a> - <i>2020</i></p>
+        <div class="video-container"><iframe frameborder="0" src="https://youtube.com/embed/HlN8jg4PP40">
+            </iframe></div>
+    </article>
 
     <footer>
         <p class="footer">Copyright 2020 by Ryan Spurgeon</p>
