@@ -1,72 +1,85 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      type="text/css"
+    />
 
-<head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" type="text/css">
-
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <title>Ryan Spurgeon</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script type="application/x-javascript">
-document.addEventListener('DOMContentLoaded',function(event){
-    var dataText = [ "Animation.", "Music.","Ryan Spurgeon."];
+      document.addEventListener('DOMContentLoaded',function(event){
+          var dataText = [ "Animation.", "Music.","Ryan Spurgeon."];
 
-    function typeWriter(text, i, fnCallback) {
-    if (i < (text.length)) {
-     document.querySelector("h1").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"><\/span>';
+          function typeWriter(text, i, fnCallback) {
+          if (i < (text.length)) {
+           document.querySelector("h1").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"><\/span>';
 
-      setTimeout(function() {
-        typeWriter(text, i + 1, fnCallback)
-      }, 100);
-    }
-    else if (typeof fnCallback == 'function') {
-      setTimeout(fnCallback, 700);
-    }
-    }
-    function StartTextAnimation(i) {
-     if (typeof dataText[i] == 'undefined'){
-        setTimeout(function() {
+            setTimeout(function() {
+              typeWriter(text, i + 1, fnCallback)
+            }, 100);
+          }
+          else if (typeof fnCallback == 'function') {
+            setTimeout(fnCallback, 700);
+          }
+          }
+          function StartTextAnimation(i) {
+           if (typeof dataText[i] == 'undefined'){
+              setTimeout(function() {
+                StartTextAnimation(0);
+              }, 20000);
+           }
+          if (i < dataText[i].length) {
+           typeWriter(dataText[i], 0, function(){
+             StartTextAnimation(i + 1);
+           });
+          }
+          }
           StartTextAnimation(0);
-        }, 20000);
-     }
-    if (i < dataText[i].length) {
-     typeWriter(dataText[i], 0, function(){
-       StartTextAnimation(i + 1);
-     });
-    }
-    }
-    StartTextAnimation(0);
-    });
+          });
     </script>
-    
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="title-container">
-        <h1 class="anim-typewriter" style="margin: 0 auto;margin-left: auto;margin-right: auto;" id="title">RYAN SPURGEON</h1>
+      <h1
+        class="anim-typewriter"
+        style="margin: 0 auto; margin-left: auto; margin-right: auto;"
+        id="title"
+      >
+        RYAN SPURGEON
+      </h1>
     </div>
 
-
-
-
-
-
     <a
-            style="text-decoration: none; font-size: 25px;"
-            href="portfolio/Plant 3.png"
-          >
-            </a
-          >
-    <p class="text-box">The official site of Ryan Spurgeon that was primarily made while he was in high school.
-        
+      style="text-decoration: none; font-size: 25px;"
+      href="portfolio/Plant 3.png"
+    >
+    </a>
+    <p class="text-box">
+      The official site of Ryan Spurgeon that was primarily made while he was in
+      high school.
     </p>
 
-    <button onclick="window.location.href='portfolio.html';" type="button" class="general-btn">ENTER
-        PORTFOLIO</button <footer>
-    
-    <p class="footer">Copyright 2022 by Ryan Spurgeon</p>
+    <button
+      onclick="window.location.href='portfolio.html';"
+      type="button"
+      class="general-btn"
+    >
+      ENTER PORTFOLIO
+    </button>
+    <footer>
+      <p class="footer">
+        Copyright
+        <script type="text/JavaScript">
+          document.write(new Date().getFullYear());
+        </script>
+        by Ryan Spurgeon
+      </p>
     </footer>
-</body>
-
+  </body>
 </html>
