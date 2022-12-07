@@ -23,7 +23,10 @@ h2 {
   position: relative;
   height: max-content;
 }
-
+img {
+  width: 100%;
+  height: auto;
+}
 #title {
   color: #81f495;
   font-family: "Roboto", sans-serif;
