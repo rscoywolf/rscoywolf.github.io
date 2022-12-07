@@ -1,257 +1,206 @@
 <!DOCTYPE html>
 
 <html>
-
-<head>
+  <head>
     <title>Portfolio | Ryan Spurgeon</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
-<style>
-    body {
-        background-color: #F1F2F2;
-    }
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-    h2 {
-        color: #ff6e7f;
-        font-size: 50px;
-        font-family: 'Roboto', sans-serif;
-        margin-right: 5%;
-        display: inline-block;
-    }
-
-    .footer {
-        font-size: 12px;
-        padding-top: 100px;
-    }
-
-    p {
-        color: #001011;
-        font-size: 20px;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    a {
-        color: #ff6e7f;
-        text-decoration: underline;
-        font-weight: bold
-    }
-
-    img {
-        max-width: min(100%, 900px);
-        max-height: min(100%, 900px);
-    }
-
-    .general-btn {
-        color: #1B998B;
-        border: 1px solid #1B998B;
-        background: none;
-        font-size: 35px;
-        font-family: 'Roboto', sans-serif;
-        cursor: pointer;
-    }
-
-    .general-btn {
-        background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%)
-    }
-
-    .general-btn {
-        margin: 10px;
-        padding: 15px 45px;
-        text-align: center;
-        text-transform: uppercase;
-        transition: 0.5s;
-        background-size: 200% auto;
-        color: white;
-        box-shadow: 0 0 20px #eee;
-        border-radius: 10px;
-        border: none;
-    }
-
-    .general-btn:hover {
-        background-position: right center;
-        color: #fff;
-        text-decoration: none;
-    }
-
-
-    .general-btn:hover {
-        color: white;
-        background-color: #1B998B;
-        box-shadow: 0 5px 15px rgba(232, 49, 81, .4);
-    }
-
-    #scroll-btn {
-        color: #1B998B;
-        border: 1px solid #1B998B;
-        background: none;
-        font-family: 'Roboto', sans-serif;
-        cursor: pointer;
-        bottom: 20px;
-        position: fixed;
-        right: 30px;
-        z-index: 99;
-        font-size: 20px;
-    }
-
-    #scroll-btn {
-        background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%)
-    }
-
-    #scroll-btn {
-        margin: 10px;
-        padding: 15px 45px;
-        text-align: center;
-        text-transform: uppercase;
-        transition: 0.5s;
-        background-size: 200% auto;
-        color: white;
-        box-shadow: 0 0 20px #eee;
-        border-radius: 10px;
-        border: none;
-        display: none;
-    }
-
-    #scroll-btn:hover {
-        background-position: right center;
-        color: #fff;
-        text-decoration: none;
-    }
-
-
-    #scroll-btn:hover {
-        color: white;
-        background-color: #1B998B;
-        box-shadow: 0 5px 15px rgba(232, 49, 81, .4);
-    }
-
-    .video-container {
-        position: relative;
-        padding-bottom: min(540px, 56.25%);
-        height: 0;
-        overflow: auto;
-
-    }
-
-    .video-container iframe,
-    .video-container object,
-    .video-container embed {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        max-width: 960px;
-        max-height: 540px;
-    }
-</style>
-
-<body>
+  <body style>
     <h2>Portfolio</h2>
-    <button onclick="window.location.href='index.html';" type="button" class="general-btn">ABOUT ME</button>
+    <button
+      onclick="window.location.href='index.html';"
+      type="button"
+      class="general-btn"
+    >
+      ABOUT ME
+    </button>
     <div>
-        <article>
-            <p><a href="https://youtu.be/hNH1KThNgKY">Rachmaninoff - Prelude no 2 op 3</a> - <i>2021</i></p>
-            <div class="video-container"><iframe frameborder="0" src="https://youtube.com/embed/hNH1KThNgKY">
-                </iframe></div>
-        </article>
-        <article>
-            <p><a href="https://youtu.be/pVvFlTVmRbU">Orange Juice advert (CG demo film)</a> - <i>2020</i></p>
-            <div class="video-container"><iframe frameborder="0" src="https://youtube.com/embed/pVvFlTVmRbU">
-                </iframe></div>
-        </article>
-        <article>
-            <p><a href="https://youtu.be/69781gBoQQk">Fermi's Promise (CG demo film)</a> - <i>2019</i></p>
-            <div class="video-container"><iframe frameborder="0" src="https://youtube.com/embed/69781gBoQQk">
-                </iframe></div>
-        </article>
-        <article>
-            <p><a href="https://youtu.be/HlMNmPMCl6o">The Edge of Andromeda (CG demo film)</a> - <i>2019</i></p>
-            <div class="video-container"><iframe frameborder="0" src="https://youtube.com/embed/HlMNmPMCl6o">
-                </iframe></div>
-        </article>
-        <article>
-            <p><a href="portfolio/Orange juice ad.png">Orange Juice Ad (CG render)</a> - <i>2019</i></p>
-            <img src="portfolio/Orange juice ad.png">
-        </article>
-        <article>
-            <p><a href="portfolio/Plant 1.png">Plant (CG render)</a><a style="text-decoration: none; font-size: 25px;"
-                    href="portfolio/Plant 1.png"> 1 </a><a style="text-decoration: none; font-size: 25px;"
-                    href="portfolio/Plant 2.png"> 2 </a><a style="text-decoration: none; font-size: 25px;"
-                    href="portfolio/Plant 3.png">
-                    3</a> - <i>2019</i></p>
-            <img src="portfolio/Plant 1.png">
-            <img src="portfolio/Plant 2.png">
-            <img src="portfolio/Plant 3.png">
-        </article>
-        <article>
-            <p><a href="portfolio/Bathroom.jpeg">Bathroom (CG render)</a> - <i>2019</i></p>
-            <img src="portfolio/Bathroom.jpeg">
-        </article>
-        <article>
-            <p><a href="https://youtu.be/_qf_OcW1F9s">Flow (CG demo film)</a> - <i>2018</i></p>
-            <div class="video-container"><iframe frameborder="0" src="https://youtube.com/embed/_qf_OcW1F9s">
-                </iframe></div>
-        </article>
-        <article>
-            <p><a href="portfolio/planet concept.png">Sci-fi Plant Concept Art (CG render)</a> - <i>2018</i></p>
-            <img src="portfolio/planet concept.png">
-        </article>
-        <article>
-            <p><a href="portfolio/Water Glass Pouring.png">Water Pouring into a Glass (CG render)</a> - <i>2018</i></p>
-            <img src="portfolio/Water Glass Pouring.png">
-        </article>
-        <article>
-            <p><a href="portfolio/Black Hole.png">Black Hole (CG render)</a> - <i>2018</i></p>
-            <img src="portfolio/Black Hole.png">
-        </article>
-        <article>
-            <p><a href="portfolio/Balls splash.png">Balls Splashing in Water (CG render)</a> - <i>2018</i></p>
-            <img src="portfolio/Balls splash.png">
-        </article>
-        <article>
-            <p><a href="portfolio/Metal Balls.png">Metal Balls (CG render)</a> - <i>2018</i></p>
-            <img src="portfolio/Metal Balls.png">
-        </article>
-        <article>
-            <p><a href="portfolio/Plant in rocks.jpg">A Plant in Rocks (CG render)</a> - <i>2018</i></p>
-            <img src="portfolio/Plant in rocks.jpg">
-        </article>
-        <article>
-            <p><a href="portfolio/Sunset.png">Sunset (CG render)</a> - <i>2018</i></p>
-            <img src="portfolio/Sunset.png">
-        </article>
-        <article>
-            <p><a href="portfolio/Boat.png">Boat (CG render)</a> - <i>2018</i></p>
-            <img src="portfolio/Boat.png">
-        </article>
-        <article>
-            <p><a href="https://sites.google.com/ocdsb.ca/identity/home">OBEA Junior Website Contest Submission</a> -
-                <i>2017</i> -
-                Second place prize winner. However, many of the links are broken and the information may not be
-                accurate.
-            </p>
-        </article>
+      <article>
+        <p>
+          <a href="https://youtu.be/hNH1KThNgKY"
+            >Rachmaninoff - Prelude no 2 op 3 - <i>2021</i></a
+          >
+        </p>
+        <div class="video-container">
+          <iframe frameborder="0" src="https://youtube.com/embed/hNH1KThNgKY">
+          </iframe>
+        </div>
+      </article>
+      <article>
+        <p>
+          <a href="https://youtu.be/pVvFlTVmRbU"
+            >Orange Juice advert (CG demo film) - <i>2020</i></a
+          >
+        </p>
+        <div class="video-container">
+          <iframe frameborder="0" src="https://youtube.com/embed/pVvFlTVmRbU">
+          </iframe>
+        </div>
+      </article>
+      <article>
+        <p>
+          <a href="https://youtu.be/69781gBoQQk"
+            >Fermi's Promise (CG demo film) - <i>2019</i></a
+          >
+        </p>
+        <div class="video-container">
+          <iframe frameborder="0" src="https://youtube.com/embed/69781gBoQQk">
+          </iframe>
+        </div>
+      </article>
+      <article>
+        <p>
+          <a href="https://youtu.be/HlMNmPMCl6o"
+            >The Edge of Andromeda (CG demo film) - <i>2019</i></a
+          >
+        </p>
+        <div class="video-container">
+          <iframe frameborder="0" src="https://youtube.com/embed/HlMNmPMCl6o">
+          </iframe>
+        </div>
+      </article>
+      <article>
+        <p>
+          <a href="portfolio/Orange juice ad.png"
+            >Orange Juice Ad (CG render) - <i>2019</i></a
+          >
+        </p>
+        <img src="portfolio/Orange juice ad.png" />
+      </article>
+      <article>
+        <p>
+          <a href="portfolio/Plant 1.png">Plant (CG render)</a
+          ><a
+            style="text-decoration: none; font-size: 25px;"
+            href="portfolio/Plant 1.png"
+          >
+            1 </a
+          ><a
+            style="text-decoration: none; font-size: 25px;"
+            href="portfolio/Plant 2.png"
+          >
+            2 </a
+          ><a
+            style="text-decoration: none; font-size: 25px;"
+            href="portfolio/Plant 3.png"
+          >
+            3 - <i>2019</i></a
+          >
+        </p>
+        <img src="portfolio/Plant 1.png" />
+        <img src="portfolio/Plant 2.png" />
+        <img src="portfolio/Plant 3.png" />
+      </article>
+      <article>
+        <p>
+          <a href="portfolio/Bathroom.jpeg">Bathroom (CG render) -
+          <i>2019</i></a>
+        </p>
+        <img src="portfolio/Bathroom.jpeg" />
+      </article>
+      <article>
+        <p>
+          <a href="https://youtu.be/_qf_OcW1F9s">Flow (CG demo film) -
+          <i>2018</i></a>
+        </p>
+        <div class="video-container">
+          <iframe frameborder="0" src="https://youtube.com/embed/_qf_OcW1F9s">
+          </iframe>
+        </div>
+      </article>
+      <article>
+        <p>
+          <a href="portfolio/planet concept.png"
+            >Sci-fi Plant Concept Art (CG render)
+          - <i>2018</i></a
+          >
+        </p>
+        <img src="portfolio/planet concept.png" />
+      </article>
+      <article>
+        <p>
+          <a href="portfolio/Water Glass Pouring.png"
+            >Water Pouring into a Glass (CG render)
+          - <i>2018</i></a
+          >
+        </p>
+        <img src="portfolio/Water Glass Pouring.png" />
+      </article>
+      <article>
+        <p>
+          <a href="portfolio/Black Hole.png">Black Hole (CG render) -
+          <i>2018</i></a>
+        </p>
+        <img src="portfolio/Black Hole.png" />
+      </article>
+      <article>
+        <p>
+          <a href="portfolio/Balls splash.png"
+            >Balls Splashing in Water (CG render)
+          - <i>2018</i></a
+          >
+        </p>
+        <img src="portfolio/Balls splash.png" />
+      </article>
+      <article>
+        <p>
+          <a href="portfolio/Metal Balls.png">Metal Balls (CG render) -
+          <i>2018</i></a>
+        </p>
+        <img src="portfolio/Metal Balls.png" />
+      </article>
+      <article>
+        <p>
+          <a href="portfolio/Plant in rocks.jpg"
+            >A Plant in Rocks (CG render)
+          - <i>2018</i></a
+          >
+        </p>
+        <img src="portfolio/Plant in rocks.jpg" />
+      </article>
+      <article>
+        <p>
+          <a href="portfolio/Sunset.png">Sunset (CG render) - <i>2018</i>
+        </p></a>
+        <img src="portfolio/Sunset.png" />
+      </article>
+      <article>
+        <p><a href="portfolio/Boat.png">Boat (CG render) - <i>2018</i></a></p>
+        <img src="portfolio/Boat.png" />
+      </article>
+      <article>
+        <p>
+          <a href="https://sites.google.com/ocdsb.ca/identity/home"
+            >OBEA Junior Website Contest Submission
+          - <i>2017</i> - Second place prize winner.</a
+          >
+        </p>
+      </article>
     </div>
-    <button onclick="scrollToTop()" id="scroll-btn" title="Go to top">Top</button>
+    <button onclick="scrollToTop()" id="scroll-btn" title="Go to top">
+      Top
+    </button>
     <footer>
-        <p class="footer">Copyright 2022 by Ryan Spurgeon</p>
+      <p class="footer">Copyright 2022 by Ryan Spurgeon</p>
     </footer>
-
-</body>
-<script>
+  </body>
+  <script>
     window.onscroll = function () {
-        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-            document.getElementById("scroll-btn").style.display = "block";
-        }
-        else {
-            document.getElementById("scroll-btn").style.display = "none";
-        }
+      if (
+        document.body.scrollTop > 30 ||
+        document.documentElement.scrollTop > 30
+      ) {
+        document.getElementById("scroll-btn").style.display = "block";
+      } else {
+        document.getElementById("scroll-btn").style.display = "none";
+      }
     };
 
     function scrollToTop() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
     }
-</script>
-
+  </script>
 </html>
