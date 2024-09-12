@@ -1,222 +1,49 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+  <link rel="stylesheet" href="./style.css">
   <title>Portfolio | Ryan Spurgeon</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="./style.css" />
+  <script src="script.js" defer></script>
 </head>
 
-<body style>
-  <h2>Portfolio</h2>
-  <button onclick="window.location.href='index.html';" type="button" class="general-btn">
-    ABOUT ME
-  </button>
-  <div>
-    <article>
-      <p>
-        <a href="https://youtu.be/G1UuLzHcf3Q">"Kinderszenen No. 1" by Robert Schumann - <i>2022</i></a>
-      </p>
-      <div class="video-container">
-        <iframe frameborder="0" src="https://youtube.com/embed/G1UuLzHcf3Q">
-        </iframe>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="portfolio" class="portfolio">
+      <h1>Portfolio</h1>
+      <div class="portfolio-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="video">Videos</button>
+        <button class="filter-btn" data-filter="image">Images</button>
       </div>
-    </article>
-    <article>
-      <p>
-        <a href="https://youtu.be/OWuOxtF7M-8">"Lieder Ohne Worte No. 9" by Felix Mendelssohn - <i>2022</i></a>
-      </p>
-      <div class="video-container">
-        <iframe frameborder="0" src="https://youtube.com/embed/OWuOxtF7M-8">
-        </iframe>
+      <div class="portfolio-grid">
+        <!-- portfolio items -->
       </div>
-    </article>
-    <article>
-      <p>
-        <a href="https://youtu.be/zTA1GIYrMXc">"Where is My Mind" by The Pixies - <i>2022</i></a>
-      </p>
-      <div class="video-container">
-        <iframe frameborder="0" src="https://youtube.com/embed/zTA1GIYrMXc">
-        </iframe>
-      </div>
-    </article>
-    <article>
-      <p>
-        <a href="https://youtu.be/OyddIJCafRc">Mr Moore's Meme Magic (Part 2) - <i>2021</i></a>
-      </p>
-      <div class="video-container">
-        <iframe frameborder="0" src="https://youtube.com/embed/OyddIJCafRc">
-        </iframe>
-      </div>
-    </article>
-    <article>
-      <p>
-        <a href="https://youtu.be/7X0S1sfkMXE">Mr Moore's Meme Magic (Part 1) - <i>2021</i></a>
-      </p>
-      <div class="video-container">
-        <iframe frameborder="0" src="https://youtube.com/embed/7X0S1sfkMXE">
-        </iframe>
-      </div>
-    </article>
-    <article>
-      <p>
-        <a href="https://youtu.be/hNH1KThNgKY">Rachmaninoff - Prelude no 2 op 3 - <i>2021</i></a>
-      </p>
-      <div class="video-container">
-        <iframe frameborder="0" src="https://youtube.com/embed/hNH1KThNgKY">
-        </iframe>
-      </div>
-    </article>
-    <article>
-      <p>
-        <a href="https://youtu.be/pVvFlTVmRbU">Orange Juice advert (CG demo film) - <i>2020</i></a>
-      </p>
-      <div class="video-container">
-        <iframe frameborder="0" src="https://youtube.com/embed/pVvFlTVmRbU">
-        </iframe>
-      </div>
-    </article>
-    <article>
-      <p>
-        <a href="https://youtu.be/69781gBoQQk">Fermi's Promise (CG demo film) - <i>2019</i></a>
-      </p>
-      <div class="video-container">
-        <iframe frameborder="0" src="https://youtube.com/embed/69781gBoQQk">
-        </iframe>
-      </div>
-    </article>
-    <article>
-      <p>
-        <a href="https://youtu.be/HlMNmPMCl6o">The Edge of Andromeda (CG demo film) - <i>2019</i></a>
-      </p>
-      <div class="video-container">
-        <iframe frameborder="0" src="https://youtube.com/embed/HlMNmPMCl6o">
-        </iframe>
-      </div>
-    </article>
-    <article>
-      <p>
-        <a href="portfolio/Orange juice ad.png">Orange Juice Ad (CG render) - <i>2019</i></a>
-      </p>
-      <img src="portfolio/Orange juice ad.png" />
-    </article>
-    <article>
-      <p>
-        <a href="portfolio/Plant 1.png">Plant (CG render)</a><a style="text-decoration: none; font-size: 25px;"
-          href="portfolio/Plant 1.png">
-          1 </a><a style="text-decoration: none; font-size: 25px;" href="portfolio/Plant 2.png">
-          2 </a><a style="text-decoration: none; font-size: 25px;" href="portfolio/Plant 3.png">
-          3 - <i>2019</i></a>
-      </p>
-      <img src="portfolio/Plant 1.png" />
-      <img src="portfolio/Plant 2.png" />
-      <img src="portfolio/Plant 3.png" />
-    </article>
-    <article>
-      <p>
-        <a href="portfolio/Bathroom.jpeg">Bathroom (CG render) -
-          <i>2019</i></a>
-      </p>
-      <img src="portfolio/Bathroom.jpeg" />
-    </article>
-    <article>
-      <p>
-        <a href="https://youtu.be/_qf_OcW1F9s">Flow (CG demo film) -
-          <i>2018</i></a>
-      </p>
-      <div class="video-container">
-        <iframe frameborder="0" src="https://youtube.com/embed/_qf_OcW1F9s">
-        </iframe>
-      </div>
-    </article>
-    <article>
-      <p>
-        <a href="portfolio/planet concept.png">Sci-fi Plant Concept Art (CG render)
-          - <i>2018</i></a>
-      </p>
-      <img src="portfolio/planet concept.png" />
-    </article>
-    <article>
-      <p>
-        <a href="portfolio/Water Glass Pouring.png">Water Pouring into a Glass (CG render)
-          - <i>2018</i></a>
-      </p>
-      <img src="portfolio/Water Glass Pouring.png" />
-    </article>
-    <article>
-      <p>
-        <a href="portfolio/Black Hole.png">Black Hole (CG render) -
-          <i>2018</i></a>
-      </p>
-      <img src="portfolio/Black Hole.png" />
-    </article>
-    <article>
-      <p>
-        <a href="portfolio/Balls splash.png">Balls Splashing in Water (CG render)
-          - <i>2018</i></a>
-      </p>
-      <img src="portfolio/Balls splash.png" />
-    </article>
-    <article>
-      <p>
-        <a href="portfolio/Metal Balls.png">Metal Balls (CG render) -
-          <i>2018</i></a>
-      </p>
-      <img src="portfolio/Metal Balls.png" />
-    </article>
-    <article>
-      <p>
-        <a href="portfolio/Plant in rocks.jpg">A Plant in Rocks (CG render)
-          - <i>2018</i></a>
-      </p>
-      <img src="portfolio/Plant in rocks.jpg" />
-    </article>
-    <article>
-      <p>
-        <a href="portfolio/Sunset.png">Sunset (CG render) - <i>2018</i>
-      </p></a>
-      <img src="portfolio/Sunset.png" />
-    </article>
-    <article>
-      <p><a href="portfolio/Boat.png">Boat (CG render) - <i>2018</i></a></p>
-      <img src="portfolio/Boat.png" />
-    </article>
-    <article>
-      <p>
-        <a href="https://sites.google.com/ocdsb.ca/identity/home">OBEA Junior Website Contest Submission
-          - <i>2017</i> - Second place prize winner.</a>
-      </p>
-    </article>
-  </div>
-  <button onclick="scrollToTop()" id="scroll-btn" title="Go to top">
-    Top
-  </button>
-  <footer style="display: flex; align-items: center; justify-content: center;">
-    <p style="margin-right: 10px;">To the extent possible under law, Ryan Spurgeon has waived all copyright and related
-      or
-      neighboring rights to this work, including all images and videos.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>To the extent possible under law, Ryan Spurgeon has waived all copyright and related or neighboring rights to
+      this work, including all images and videos.</p>
     <a href="http://creativecommons.org/publicdomain/zero/1.0/">
-      <img src="https://licensebuttons.net/p/zero/1.0/88x31.png" alt="CC0" style="height: 30px; width: auto;" />
+      <img src="https://licensebuttons.net/p/zero/1.0/88x31.png" alt="CC0" />
     </a>
   </footer>
-</body>
-<script>
-  window.onscroll = function () {
-    if (
-      document.body.scrollTop > 30 ||
-      document.documentElement.scrollTop > 30
-    ) {
-      document.getElementById("scroll-btn").style.display = "block";
-    } else {
-      document.getElementById("scroll-btn").style.display = "none";
-    }
-  };
 
-  function scrollToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-</script>
+  <button id="scroll-btn" title="Go to top">↑</button>
+</body>
 
 </html>

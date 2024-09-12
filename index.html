@@ -1,66 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" type="text/css" />
-  <link rel="stylesheet" href="./style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+  <link rel="stylesheet" href="./style.css">
   <title>Ryan Spurgeon</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <script type="application/x-javascript">
-    document.addEventListener('DOMContentLoaded',function(event){
-        var dataText = [ "Animation.", "Music.","Ryan Spurgeon."];
-
-        function typeWriter(text, i, fnCallback) {
-        if (i < (text.length)) {
-         document.querySelector("h1").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"><\/span>';
-
-          setTimeout(function() {
-            typeWriter(text, i + 1, fnCallback)
-          }, 100);
-        }
-        else if (typeof fnCallback == 'function') {
-          setTimeout(fnCallback, 700);
-        }
-        }
-        function StartTextAnimation(i) {
-         if (typeof dataText[i] == 'undefined'){
-            setTimeout(function() {
-              StartTextAnimation(0);
-            }, 20000);
-         }
-        if (i < dataText[i].length) {
-         typeWriter(dataText[i], 0, function(){
-           StartTextAnimation(i + 1);
-         });
-        }
-        }
-        StartTextAnimation(0);
-        });
-  </script>
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-  <div class="title-container">
-    <h1 class="anim-typewriter" style="margin: 0 auto; margin-left: auto; margin-right: auto;" id="title">
-      RYAN SPURGEON
-    </h1>
-  </div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <a style="text-decoration: none; font-size: 25px;" href="portfolio/Plant 3.png">
-  </a>
-  <p class="text-box">
-    The official site of Ryan Spurgeon (for now...)
-  </p>
+  <main>
+    <section id="home" class="banner">
+      <div class="banner-content">
+        <h1 id="animated-text">Ryan Spurgeon</h1>
+        <p class="subtitle">Someone you have (likely) never heard of.</p>
+      </div>
+    </section>
 
-  <button onclick="window.location.href='portfolio.html';" type="button" class="general-btn">
-    ENTER PORTFOLIO
-  </button>
-  <footer
-    style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
-    <p style="margin-bottom: 10px;">To the extent possible under law, Ryan Spurgeon has waived all copyright and related
-      or neighboring rights to this work, including all images and videos.</p>
+    <section id="about" class="about">
+      <h2>About</h2>
+      <p>The official site of Ryan Spurgeon, showcasing animation and other personal projects.</p>
+      <a href="portfolio.html" class="cta-button">View Portfolio</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>To the extent possible under law, Ryan Spurgeon has waived all copyright and related or neighboring rights to
+      this work, including all images and videos.</p>
     <a href="http://creativecommons.org/publicdomain/zero/1.0/">
-      <img src="https://licensebuttons.net/p/zero/1.0/88x31.png" alt="CC0" style="height: 30px; width: auto;" />
+      <img src="https://licensebuttons.net/p/zero/1.0/88x31.png" alt="CC0" />
     </a>
   </footer>
 </body>
