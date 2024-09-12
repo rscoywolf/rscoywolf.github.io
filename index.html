@@ -1,44 +1,42 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" type="text/css" />
-
   <link rel="stylesheet" href="./style.css" />
   <title>Ryan Spurgeon</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script type="application/x-javascript">
-      document.addEventListener('DOMContentLoaded',function(event){
-          var dataText = [ "Animation.", "Music.","Ryan Spurgeon."];
+    document.addEventListener('DOMContentLoaded',function(event){
+        var dataText = [ "Animation.", "Music.","Ryan Spurgeon."];
 
-          function typeWriter(text, i, fnCallback) {
-          if (i < (text.length)) {
-           document.querySelector("h1").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"><\/span>';
+        function typeWriter(text, i, fnCallback) {
+        if (i < (text.length)) {
+         document.querySelector("h1").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"><\/span>';
 
+          setTimeout(function() {
+            typeWriter(text, i + 1, fnCallback)
+          }, 100);
+        }
+        else if (typeof fnCallback == 'function') {
+          setTimeout(fnCallback, 700);
+        }
+        }
+        function StartTextAnimation(i) {
+         if (typeof dataText[i] == 'undefined'){
             setTimeout(function() {
-              typeWriter(text, i + 1, fnCallback)
-            }, 100);
-          }
-          else if (typeof fnCallback == 'function') {
-            setTimeout(fnCallback, 700);
-          }
-          }
-          function StartTextAnimation(i) {
-           if (typeof dataText[i] == 'undefined'){
-              setTimeout(function() {
-                StartTextAnimation(0);
-              }, 20000);
-           }
-          if (i < dataText[i].length) {
-           typeWriter(dataText[i], 0, function(){
-             StartTextAnimation(i + 1);
-           });
-          }
-          }
-          StartTextAnimation(0);
-          });
-    </script>
+              StartTextAnimation(0);
+            }, 20000);
+         }
+        if (i < dataText[i].length) {
+         typeWriter(dataText[i], 0, function(){
+           StartTextAnimation(i + 1);
+         });
+        }
+        }
+        StartTextAnimation(0);
+        });
+  </script>
 </head>
 
 <body>
@@ -57,10 +55,10 @@
   <button onclick="window.location.href='portfolio.html';" type="button" class="general-btn">
     ENTER PORTFOLIO
   </button>
-  <footer style="display: flex; align-items: center; justify-content: center;">
-    <p style="margin-right: 10px;">To the extent possible under law, Ryan Spurgeon has waived all copyright and related
-      or
-      neighboring rights to this work.</p>
+  <footer
+    style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+    <p style="margin-bottom: 10px;">To the extent possible under law, Ryan Spurgeon has waived all copyright and related
+      or neighboring rights to this work, including all images and videos. This work is published from: Canada.</p>
     <a href="http://creativecommons.org/publicdomain/zero/1.0/">
       <img src="https://licensebuttons.net/p/zero/1.0/88x31.png" alt="CC0" style="height: 30px; width: auto;" />
     </a>
