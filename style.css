@@ -23,10 +23,12 @@ h2 {
   position: relative;
   height: max-content;
 }
+
 img {
   width: 100%;
   height: auto;
 }
+
 #title {
   color: #81f495;
   font-family: "Roboto", sans-serif;
@@ -63,12 +65,10 @@ a {
 }
 
 .general-btn {
-  background-image: linear-gradient(
-    to right,
-    #94849b 0%,
-    #a9e4ef 51%,
-    #94849b 100%
-  );
+  background-image: linear-gradient(to right,
+      #94849b 0%,
+      #a9e4ef 51%,
+      #94849b 100%);
 }
 
 .general-btn {
@@ -129,6 +129,7 @@ span {
     border-color: transparent;
   }
 }
+
 #scroll-btn {
   color: #1b998b;
   border: 1px solid #1b998b;
@@ -143,12 +144,10 @@ span {
 }
 
 #scroll-btn {
-  background-image: linear-gradient(
-    to right,
-    #94849b 0%,
-    #a9e4ef 51%,
-    #94849b 100%
-  );
+  background-image: linear-gradient(to right,
+      #94849b 0%,
+      #a9e4ef 51%,
+      #94849b 100%);
 }
 
 #scroll-btn {
